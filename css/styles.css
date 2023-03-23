@@ -1,0 +1,525 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  position: relative;
+  border-top: 4px solid #FF1A50;
+  border-radius: 50px;
+  max-width: 200px;
+  margin: 40px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: #0D0D0D;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.container {
+  margin: auto auto;
+}
+.container.normal {
+  max-width: 1000px;
+}
+.container.long {
+  max-width: 1200px;
+}
+
+footer {
+  position: relative;
+  padding: 0 50px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 80px 0;
+}
+.footer-content .footer-brand {
+  max-width: 15%;
+}
+.footer-content .footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.footer-content .footer-copyright {
+  margin-top: 50px;
+}
+.footer-content .footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.footer-content .footer-links a {
+  display: block;
+  margin: 20px 0;
+  color: #0D0D0D;
+}
+.footer-content .footer-links-payments {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  column-gap: 2%;
+}
+.footer-content .footer-links-payments a {
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding: 30px 50px;
+  border-bottom: 1px solid lightgray;
+}
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+header .header-links a {
+  position: relative;
+  border: 1px solid lightgray;
+  color: black;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 50px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+header .header-links a.sign-up {
+  border: none;
+  background-color: #FF1A50;
+  color: #FFFFFF;
+}
+
+.subheader {
+  background-color: white;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 20px 50px 20px 50px;
+}
+.subheader .subheader-content {
+  display: flex;
+  justify-content: center;
+}
+.subheader .subheader-content a {
+  position: relative;
+  color: black;
+  font-size: 1rem;
+  margin: 0 20px;
+}
+
+.banner-div {
+  width: 100%;
+  padding: 50px 0;
+}
+.banner-div .banner-div-content {
+  padding: 0 50px;
+}
+.banner-div .banner-div-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/banner_1.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  height: 550px;
+  padding: 0 0 0 80px;
+}
+.banner-div .banner-div-bg h1 {
+  font-size: 3.75rem;
+  max-width: 500px;
+  line-height: 5rem;
+  margin: 20px 0 50px 0;
+}
+.banner-div .banner-div-bg h2 {
+  font-size: 1.25rem;
+  max-width: 500px;
+  margin: 30px 0;
+}
+.banner-div .banner-div-bg img {
+  height: 450px;
+}
+
+.banks-div {
+  position: relative;
+  background-image: url("../img/geowave_w_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.banks-div .banks-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, min(25%, max(100px, 14.2857142857%))));
+  row-gap: 40px;
+  padding: 0 50px;
+}
+.banks-div .banks-content img {
+  margin: auto auto;
+  height: 60px;
+}
+
+.instruments-div {
+  width: 100%;
+  padding: 50px 0;
+}
+.instruments-div h2 {
+  margin: 10px 0 30px 130px;
+  color: #0D0D0D;
+  font-size: 2rem;
+}
+.instruments-div h3 {
+  margin: 20px 0 10px 130px;
+  color: #FF1A50;
+  font-weight: bold;
+}
+.instruments-div .instruments-content {
+  padding: 0 50px;
+}
+.instruments-div .instruments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, min(100%, max(200px, 50%))));
+  row-gap: 40px;
+}
+.instruments-div .instruments-grid .instruments-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  padding: 0 50px;
+}
+.instruments-div .instruments-grid .instruments-item img {
+  margin-right: 50px;
+}
+
+.intro-div {
+  width: 100%;
+  padding: 50px 0 80px 0;
+}
+.intro-div .intro-content {
+  position: relative;
+  padding: 0 50px;
+}
+.intro-div .intro-content .intro-bg-img {
+  position: absolute;
+  z-index: 1;
+}
+.intro-div .intro-content .intro-bg-img.bull {
+  left: -100px;
+}
+.intro-div .intro-content .intro-bg-img.bear {
+  right: -90px;
+}
+.intro-div .intro-content .intro-div-1 {
+  position: relative;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  padding: 80px;
+  margin-left: 80px;
+  max-width: 830px;
+  z-index: 2;
+}
+.intro-div .intro-content .intro-div-1 .intro-div-text {
+  max-width: 300px;
+}
+.intro-div .intro-content .intro-div-1 .intro-div-text h2 {
+  margin: 20px 0 50px 0;
+  color: #0D0D0D;
+  font-size: 2rem;
+}
+.intro-div .intro-content .intro-div-1 .intro-div-text h3 {
+  color: #FF1A50;
+  font-weight: bold;
+  margin: 0;
+}
+.intro-div .intro-content .intro-div-1 .intro-div-text p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 50px 0 80px 0;
+}
+.intro-div .intro-content .intro-div-1 .intro-div-text a {
+  background-color: #FF1A50;
+  text-align: center;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  padding: 10px 50px;
+}
+.intro-div .intro-content .intro-div-2 {
+  position: absolute;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  padding: 40px 50px;
+  max-width: 400px;
+  top: 35px;
+  right: 50px;
+  z-index: 4;
+}
+.intro-div .intro-content .intro-div-2 .intro-div-text h3 {
+  color: #0D0D0D;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+  line-height: 1.8rem;
+}
+.intro-div .intro-content .intro-div-2 .intro-div-text p {
+  font-size: 1rem;
+  margin: 0;
+}
+.intro-div .intro-content .intro-div-3 {
+  position: absolute;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  padding: 40px 50px;
+  max-width: 400px;
+  bottom: 25px;
+  right: 130px;
+  z-index: 3;
+}
+.intro-div .intro-content .intro-div-3 .intro-div-text h3 {
+  color: #0D0D0D;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+  line-height: 1.8rem;
+}
+.intro-div .intro-content .intro-div-3 .intro-div-text p {
+  font-size: 1rem;
+  margin: 0;
+}
+.intro-div .intro-content .intro-payments {
+  padding: 20px 0;
+  margin-left: 80px;
+}
+.intro-div .intro-content .intro-payments img {
+  margin-right: 5px;
+  height: 40px;
+}
+
+.advice-div {
+  position: relative;
+  width: 100%;
+  margin: 50px 0;
+}
+.advice-div .advice-bg {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 300px;
+  object-fit: cover;
+  z-index: 1;
+}
+.advice-div .advice-content {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  z-index: 2;
+}
+.advice-div .advice-content div {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  margin-right: 30px;
+  padding: 40px 80px;
+}
+.advice-div .advice-content div h2 {
+  margin: 10px 0 30px 0;
+  color: #0D0D0D;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.advice-div .advice-content div h3 {
+  margin: 20px 0 10px 0;
+  color: #FF1A50;
+  font-weight: bold;
+}
+.advice-div .advice-content div a {
+  display: block;
+  margin: 15px 0;
+  color: #0D0D0D;
+}
+.advice-div .advice-content div a i {
+  margin-left: 20px;
+}
+
+.steps-div {
+  width: 100%;
+  padding: 50px 0;
+}
+.steps-div h2 {
+  margin: 10px 0 20px 0;
+  color: #0D0D0D;
+  font-size: 2rem;
+}
+.steps-div h3 {
+  margin: 20px 0 10px 0;
+  color: #FF1A50;
+  font-weight: bold;
+}
+.steps-div .steps-content {
+  padding: 0 50px;
+}
+.steps-div .steps-grid {
+  display: flex;
+  justify-content: space-between;
+}
+.steps-div .steps-grid img {
+  max-width: 600px;
+}
+.steps-div .steps-grid hr {
+  position: absolute;
+  border: none;
+  border-left: 2px dashed #FF1A50;
+  height: 120px;
+  margin: 50px 26px;
+  z-index: 1;
+}
+.steps-div .steps-grid hr.gray {
+  border-left: 2px dashed #b1b1b1;
+}
+.steps-div .steps-grid .steps-items {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 20px 0;
+  z-index: 2;
+}
+.steps-div .steps-grid .steps-items .steps-num {
+  background-color: #FF1A50;
+  padding: 12px 20px;
+  border-radius: 50px;
+  margin-right: 50px;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.steps-div .steps-grid .steps-items .steps-num-gray {
+  background-color: #d3d3d3;
+  padding: 12px 20px;
+  border-radius: 50px;
+  margin-right: 50px;
+  color: #444444;
+  font-size: 1.5rem;
+}
+.steps-div .steps-grid .steps-items h4 {
+  margin: 20px 0 10px 0;
+}
+.steps-div .steps-grid .steps-items p {
+  margin: 10px 0 20px 0;
+}
+
+.joinus-div {
+  width: 100%;
+  padding: 50px 0;
+  margin-bottom: 100px;
+}
+.joinus-div .joinus-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.joinus-div .joinus-content h2 {
+  margin: 0 0 60px 0;
+  color: #0D0D0D;
+  font-size: 2rem;
+}
+.joinus-div .joinus-content p {
+  line-height: 1.5rem;
+}
+.joinus-div .joinus-content .joinus-text {
+  max-width: 500px;
+}
+.joinus-div .joinus-content .joinus-left-div {
+  max-width: 500px;
+}
+.joinus-div .joinus-content .joinus-left-div div {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+  margin-top: 50px;
+}
+.joinus-div .joinus-content .joinus-left-div .joinus-trading {
+  background-color: #FF1A50;
+  text-align: center;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  padding: 10px 0;
+}
+.joinus-div .joinus-content .joinus-left-div .joinus-demo {
+  border: 1px solid #0D0D0D;
+  text-align: center;
+  border-radius: 5px;
+  color: #0D0D0D;
+  font-size: 0.8rem;
+  padding: 10px 0;
+}
+
+.socmed-div {
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+.socmed-div .socmed-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.socmed-div .socmed-content .socmed-lang a {
+  color: #0D0D0D;
+}
+.socmed-div .socmed-content .socmed-lang i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+.socmed-div .socmed-content .socmed-links {
+  display: flex;
+  justify-content: space-between;
+}
+.socmed-div .socmed-content .socmed-links a {
+  margin: 0 10px;
+  color: #0D0D0D;
+  font-size: 1.2rem;
+}
+
+.tnc-div {
+  width: 100%;
+  padding: 40px 0 80px 0;
+}
+.tnc-div .tnc-content {
+  padding: 0 50px;
+}
+.tnc-div .tnc-content p {
+  margin: 20px 0;
+  line-height: 1.4rem;
+}
